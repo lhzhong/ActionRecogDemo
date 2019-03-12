@@ -71,7 +71,7 @@ class VideoBox(QtWidgets.QWidget):
         self.btn_close_camera.clicked.connect(self.close)
 
         self.data = DataSet()
-        self.model = load_model('data/checkpoints/inception.020-1.24.hdf5')
+        self.model = load_model('./model/inception.020-1.24.hdf5')
 
         # 将定时器超时信号和槽函数连接
         self.timer_camera.timeout.connect(self.show_video)
