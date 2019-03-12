@@ -39,7 +39,7 @@ class DataSet:
     @staticmethod
     def get_data():
         """Load our data from file."""
-        with open('./data/data_file.csv', 'r') as fin:
+        with open('./data_file.csv', 'r') as fin:
             reader = csv.reader(fin)
             data = list(reader)
 
